@@ -1,0 +1,3 @@
+function createDiv(parent, child){
+    document.createElement(child)
+}

@@ -5,7 +5,6 @@ module.exports = {
     devtool: 'inline-source-map', //It will be easier to track down errors 
     output: { 
         filename: 'main.js', 
-        path: path.resolve(__dirname, 'dist'), 
-        clean: true, // This will cleanup output folder (dist) after each build 
+        path: path.resolve(__dirname, 'dist')
     }, 
 }; 

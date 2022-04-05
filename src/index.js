@@ -1,3 +1,1 @@
-let loadPage = (function(){
-
-})();
+console.log("Webpack working :)")
