@@ -1,7 +1,7 @@
 import { home } from "./home";
 import { main } from "./index";
 
-function createDomElement(type, className = "", text = ""){
+function createDomElement(type, className, text){
     let newElement = document.createElement(type);
     newElement.classList.add(className);
     newElement.textContent = text;
@@ -13,4 +13,4 @@ function createDomElement(type, className = "", text = ""){
 //     main.appendChild(home);
 // }
 
-export {createDomElement, renderHome}
+export {createDomElement}
