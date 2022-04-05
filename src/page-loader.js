@@ -8,9 +8,19 @@ function createDomElement(type, className, text){
     return newElement;
 }
 
-// function renderHome(){
-//     main.innerHTML = "";
-//     main.appendChild(home);
-// }
+function renderHome(){
+    main.innerHTML = "";
+    main.appendChild(home);
+}
+
+function renderMenus(){
+    main.innerHTML = "";
+    main.appendChild(menus);
+}
+
+function renderContact(){
+    main.innerHTML = "";
+    main.appendChild(contact)
+}
 
 export {createDomElement}

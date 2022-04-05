@@ -13,11 +13,6 @@ topMenu.appendChild(menuItem1);
 topMenu.appendChild(menuItem2);
 topMenu.appendChild(menuItem3);
 
-
-// container.appendChild(header);
-// container.appendChild(whiteSeperator);
-// container.appendChild(topMenu);
-
 const headerItems = [header, whiteSeperator, topMenu]
 
 export { headerItems, menuItem1, menuItem2, menuItem3 }
