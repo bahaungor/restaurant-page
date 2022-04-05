@@ -1,7 +1,16 @@
-export function placeElement(parent, elementType, className = "", textContent = ""){
-    let child = document.createElement(elementType);
-    child.textContent = textContent;
-    child.classList.add(className);
-    parent.appendChild(child);
-    return parent;
+import { home } from "./home";
+import { main } from "./index";
+
+function createDomElement(type, className = "", text = ""){
+    let newElement = document.createElement(type);
+    newElement.classList.add(className);
+    newElement.textContent = text;
+    return newElement;
 }
+
+// function renderHome(){
+//     main.innerHTML = "";
+//     main.appendChild(home);
+// }
+
+export {createDomElement, renderHome}

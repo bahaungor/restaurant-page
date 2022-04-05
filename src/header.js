@@ -1,21 +1,23 @@
-import { placeElement } from "./page-loader";
-// function placeElement(parent, elementType, className = "", textContent)
-let container = document.querySelector("#content");
+import { createDomElement, renderHome } from "./page-loader";
 
-let div = "div";
-let h1 = "h1";
-let h2 = "h2";
-let br = "br";
-let p = "p";
-let img = "img";
+const header = createDomElement("header", "header", "Corolla Club Restaurant");
+const whiteSeperator = createDomElement("div", "white-seperator", undefined);
+const topMenu = createDomElement("menu", "top-menu", undefined);
+const menuItem1 = createDomElement("div", "top-menu-item", "Home");
+const menuItem2 = createDomElement("div", "top-menu-item", "Menus");
+const menuItem3 = createDomElement("div", "top-menu-item", "Contact");
+menuItem1.addEventListener("click", renderHome);
+menuItem2.addEventListener("click", renderHome);
+menuItem3.addEventListener("click", renderHome);
+topMenu.appendChild(menuItem1);
+topMenu.appendChild(menuItem2);
+topMenu.appendChild(menuItem3);
 
-let header = "header";
-let whiteSeperator = "white-seperator";
-let topMenu = "top-menu";
-let topMenuItem = "top-menu-item";
 
-let headerText = "Corolla Club Restaurant";
+// container.appendChild(header);
+// container.appendChild(whiteSeperator);
+// container.appendChild(topMenu);
 
-let topHeader = placeElement(container, div, header, headerText);
-let seperator = placeElement(container, div, whiteSeperator, headerText);
-let menu
+const headerItems = [header, whiteSeperator, topMenu]
+
+export { headerItems, menuItem1, menuItem2, menuItem3 }
