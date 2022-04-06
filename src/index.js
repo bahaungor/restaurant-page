@@ -1,4 +1,4 @@
-import { headerItems } from "./header";
+import { headerItems, menuItem1, menuItem2, menuItem3 } from "./header";
 import { home } from "./home";
 
 
@@ -8,10 +8,13 @@ document.body.appendChild(mainContainer);
 const main = document.createElement("main");
 main.classList.add("main");
 
+
 headerItems.forEach(item => {
     mainContainer.appendChild(item);
 });
+
 mainContainer.appendChild(main);
+
 main.appendChild(home);
 
 console.log("webpack working")
