@@ -27,5 +27,4 @@ Bahadir Ungor | Artificial Intelligence Engineer @ <a href="#credits"><img src="
 <a href="https://linkedin.com/in/bahaungor" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="bahaungor" height="30" width="40" /></a>
 <a href="https://github.com/bahaungor" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="bahaungor" height="30" width="40"/></a>
 </p>
-![image](https://github.com/bahaungor/restaurant-page/assets/96170851/b8edcb17-9a7a-45cf-8c1b-6bf502863459)
 
