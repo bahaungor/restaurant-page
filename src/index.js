@@ -1,22 +1,11 @@
-import { headerItems, menuItem1, menuItem2, menuItem3 } from "./header";
-import { home } from "./home";
+import { setTheme } from './themeUtils';
+import { createHome } from './homeModule';
+import { createMenus } from './menuModule'
+import { createContact } from './contactModule';
+import "./style.css"; 
 
-
-const mainContainer = document.createElement("div");
-mainContainer.classList.add("main-container");
-document.body.appendChild(mainContainer);
-const main = document.createElement("main");
-main.classList.add("main");
-
-
-headerItems.forEach(item => {
-    mainContainer.appendChild(item);
-});
-
-mainContainer.appendChild(main);
-
-main.appendChild(home);
-
-console.log("webpack working")
-
-export {main}
+document.querySelector('.tt').addEventListener('click', setTheme);
+document.querySelector('.home').addEventListener('click', createHome)
+document.querySelector('.menus').addEventListener('click', createMenus)
+document.querySelector('.contact').addEventListener('click', createContact)
+createHome()
